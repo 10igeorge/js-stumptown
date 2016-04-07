@@ -11,12 +11,11 @@
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">{{item.name}}<i class="material-icons right">close</i></span>
-        <p>Price: {{item.price}}</p>
+        <p>Price: ${{item.price}}</p>
         <p>{{item.description}}</p>
         <button class="btn waves-effect waves-light" {{action 'removeFromCart' item}}>Remove</button>
       </div>
     </div>
-    {{item.name}} -- {{item.price}}
   {{/each}}
 {{else}}
 Your cart is empty!

@@ -1,2 +1,19 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
+
+body {
+  background-image: url(/images/bg.jpg);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
