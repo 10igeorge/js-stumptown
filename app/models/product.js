@@ -6,5 +6,6 @@ export default DS.Model.extend({
   description: DS.attr(),
   price: DS.attr('number'),
   origin: DS.attr(),
-  notes: DS.attr()
+  notes: DS.attr(),
+  image: DS.attr()
 });

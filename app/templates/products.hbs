@@ -1,6 +1,9 @@
-{{#each model as |category|}}
-    {{#each category.products as |product|}}
-      <h5>{{product.name}}</h5>
-      <p>${{product.price}}</p>
-    {{/each}}
-{{/each}}
+<div class="container">
+  {{#each model as |category|}}
+      {{#each category.products as |product|}}
+        <h5>{{product.name}}</h5>
+        <p>${{product.price}}</p>
+      {{/each}}
+  {{/each}}
+  {{new-product listProduct='listProduct' category=model}}
+</div>

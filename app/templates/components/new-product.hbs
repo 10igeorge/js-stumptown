@@ -1,0 +1,82 @@
+{{#each category as |category|}}
+    {{log category.name}}
+{{/each}}
+
+{{#if newProductForm}}
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input type="text" class="validate">
+          <label for="name">Product Name</label>
+        </div>
+        <div class="input-field col s6">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="last_name">Description</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+          <label for="disabled">Disabled</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+    <!-- <div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label><br>
+          {{input value=name id="name"}}
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description:</label><br>
+          {{textarea value=description id="description" cols="60" rows="10"}}
+        </div> -->
+
+
+
+
+
+<!--
+        <div class="form-group">
+          <label for="price">Price:</label><br>
+          {{input value=price id="price"}}
+        </div>
+
+        <div class="form-group">
+          <label for="origin">Origin (if applicable):</label><br>
+          {{input value=origin id="origin"}}
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Notes:</label><br>
+          {{textarea value=notes id="notes" cols="60" rows="10"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image URL:</label><br>
+          {{textarea value=image id="image"}}
+        </div>
+
+        <button class="btn btn-primary btn-sm" {{action 'listProduct'}}>Submit</button><br><br><hr>
+      </form>
+    </div> -->
+{{else}}
+    <a class="btn btn-sm btn-success btn-xs" {{action 'showProductForm'}}>List New Product</a>
+{{/if}}
