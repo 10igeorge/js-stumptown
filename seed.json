@@ -29,15 +29,15 @@
     "name": "French Press",
     "description": "Makes dope ass coffee",
     "price": 42,
-    "origin": "null",
+    "origin": null,
     "notes": "Brews 51 ounces",
     "category": "1"
   }, {
     "name": "Some mug",
     "description": "It holds things",
     "price": 38,
-    "origin": "null",
+    "origin": null,
     "notes": "Vitrified StOnE",
-    "category": "1"  
+    "category": "1"
   }]
 }

@@ -1,0 +1,5 @@
+{{#each model.products as |product|}}
+  {{#if product.origin}}
+    {{coffee-tile showCoffees="showCoffees" coffee=product}}
+  {{/if}}
+{{/each}}
