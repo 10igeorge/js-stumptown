@@ -1,19 +1,23 @@
-{{#each shoppingCart.items as |item|}}
-  <div class="card medium">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
+<h1>Your Cart</h1>
+{{#if shoppingCart.items}}
+  {{#each shoppingCart.items as |item|}}
+    <div class="card medium">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="images/office.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">{{item.name}}<i class="material-icons right">Read more</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">{{item.name}}<i class="material-icons right">close</i></span>
+        <p>Price: {{item.price}}</p>
+        <p>{{item.description}}</p>
+        <button class="btn waves-effect waves-light" {{action 'removeFromCart' item}}>Remove</button>
+      </div>
     </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">{{item.name}}<i class="material-icons right">Read more</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">{{item.name}}<i class="material-icons right">close</i></span>
-      <p>Price: {{item.price}}</p>
-      <p>{{item.description}}</p>
-      <button class="btn waves-effect waves-light" {{action 'removeFromCart' item}}>Remove</button>
-    </div>
-  </div>
-  {{item.name}} -- {{item.price}}
-
-{{/each}}
+    {{item.name}} -- {{item.price}}
+  {{/each}}
+{{else}}
+Your cart is empty!
+{{/if}}
