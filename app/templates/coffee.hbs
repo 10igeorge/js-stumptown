@@ -1,0 +1,18 @@
+
+<div class="row">
+  <div class="col-md-4">
+    {{#each model as |category|}}
+      {{#if (getCategory category 'coffee')}}
+        {{#each category.products as |coffee|}}
+          {{coffee-tile coffee=coffee}}
+        {{/each}}
+      {{/if}}
+    {{/each}}
+  </div>
+  <div class="col-md-4">
+    <button class="btn">Africa</button>
+  </div>
+  <div class="col-md-4">
+dsa
+  </div>
+</div>

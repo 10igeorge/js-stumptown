@@ -1,4 +1,7 @@
 {{#each model.products as |product|}}
+  {{#unless product.origin}}
+    <p>{{accessories-tile accessory=product}}</p>
+  {{/unless}}
   {{#if product.origin}}
     {{coffee-tile showCoffees="showCoffees" coffee=product}}
   {{/if}}
