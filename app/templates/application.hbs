@@ -5,14 +5,15 @@
       {{#link-to 'products'}}<li><a href="#">Shop</a></li>{{/link-to}}
     </ul>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      {{#link-to 'cart'}}<li><a href="#">Cart</a></li>{{/link-to}}
+      {{#link-to 'cart'}}<li><i class="material-icons">shopping_cart</i>
+</li>{{/link-to}}
     </ul>
   </div>
 </nav>
 
-<div class="container">
+
   {{outlet}}
-</div>
+
 
 <footer class="main page-footer">
  <div class="container">
@@ -39,5 +40,3 @@
    </div>
  </div>
 </footer>
-{{!-- ember-cli-materialize modal container --}}
-{{md-modal-container}}

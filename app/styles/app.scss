@@ -1,19 +1,18 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
 
-body {
+.bg {
   background-image: url(/assets/images/bg.jpg);
   background-repeat: no-repeat;
   display: block;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-size:cover;
 }
-nav {
-  background: transparent;
-}
 
-.bg-black{
-  background: black;
+nav {
+  background-color: black;
+  color: black;
 }
 
 #nav-mobile{
@@ -40,12 +39,6 @@ nav {
 .buttonText {
   text-align: center;
 }
-//
-// .links{
-//   font-size: 72px;
-//   color: #fff;
-//   text-align: center;
-// }
 
 body {
   display: flex;
@@ -57,15 +50,12 @@ main {
   flex: 1 0 auto;
 }
 
-.navbar {
-  background-color: transparent;
-}
-
 footer {
   background: transparent;
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 200px;
 }
 
 footer.page-footer{
