@@ -3,6 +3,8 @@
     <p>{{accessories-tile accessory=product}}</p>
   {{/unless}}
   {{#if product.origin}}
-    {{coffee-tile showCoffees="showCoffees" coffee=product}}
+    {{coffee-tile coffee=product}}
   {{/if}}
 {{/each}}
+
+{{display-cart}}

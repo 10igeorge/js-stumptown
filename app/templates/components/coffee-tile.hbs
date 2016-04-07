@@ -4,4 +4,4 @@
 <h5>{{coffee.name}}</h5>
 <p>{{coffee.description}}</p>
 <p>Tasting Notes: {{coffee.notes}}</p>
-<button class="btn btn-info">Add to cart</button>
+<button class="btn btn-info" {{action 'addToCart' coffee}}>Add to cart</button>
