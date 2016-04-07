@@ -1,0 +1,43 @@
+{ "categories": [{
+    "name": "coffee",
+    "products": {
+      "0": true,
+      "1": true
+    }
+  }, {
+    "name": "accessories",
+    "products": {
+      "2": true,
+      "3": true
+    }
+  }],
+"products": [{
+    "name": "African Origin Coffee",
+    "description": "Like so tasty",
+    "price": 17,
+    "origin": "Africa",
+    "notes": "Licorice",
+    "category": "0"
+  }, {
+    "name": "Latin American Origin Coffee",
+    "description": "Supes tasty",
+    "price": 18,
+    "origin": "Latin America",
+    "notes": "Blood Orange",
+    "category": "0"
+  }, {
+    "name": "French Press",
+    "description": "Makes dope ass coffee",
+    "price": 42,
+    "origin": "null",
+    "notes": "Brews 51 ounces",
+    "category": "1"
+  }, {
+    "name": "Some mug",
+    "description": "It holds things",
+    "price": 38,
+    "origin": "null",
+    "notes": "Vitrified StOnE",
+    "category": "1"  
+  }]
+}
