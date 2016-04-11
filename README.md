@@ -1,4 +1,4 @@
-# Js-stumptown
+# Stumptown Clone
 
 Test project with Ember 2.0 attempting to recreate Stumptown's website. This is a work in progress.
 
@@ -11,7 +11,7 @@ You will need the following things properly installed on your computer.
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
-
+* 
 ## Installation
 
 * `git clone https://github.com/10igeorge/js-stumptown.git` this repository
